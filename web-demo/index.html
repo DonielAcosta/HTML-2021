@@ -14,10 +14,37 @@
 
     Rutas absolutas: 
         tienen un protocolo htp o https y son unicas en la red 
+        se suelen utilizar para rutas externas.
+
+    Rutas relativas
+        pueden ser relativas al punto donde nos encontramos o relativas a la raiz del proyecto 
+
+        No usan protocolo
+
+        si el recurso se encuentra al mismo nivel (en la misma carpeta ) podremos unicamente el nombre del archivo.
+        
+        Si necesitamos salir de la carpeta actual usaremos ../ y se pone uno por cada nivel (carpeta ) de la que queremos salir
+
+    Atributos de los enlaces
+        target: define donde se abrira el recurso solisitado. por norma general siempre que useis rutas absolutas pondreis como valor "_blank"
+        El valor por defecto es "_self" (es como no poner nada)
+        
+        download: Atributo booleano, sirve para descargar el recurso solicitado.
+        IMPORTANTE, el recurso debe estar en tu mismo servidor 
+
     
 -->
 <body>
     <h1>Home</h1>
-    <a href="contacto.html">Ir a Contacto</a>
+    <nav>
+        <p><a href="paginas/blog.html#post-1">Post 1</a></p>  
+        <p><a href="paginas/blog.html#post-2">Post 2</a></p>  
+        <p><a href="paginas/blog.html#post-3">Post 3</a></p>  
+        <p><a href="paginas/blog.html#post-4">Post 4</a></p>  
+        <p><a href="paginas/blog.html#post-5">Post 5</a></p>  
+      </nav>
+    <a href="paginas/blog.html">Ir al blog</a>
+    <!-- <a href="assets/images/abc.jpg" download>Descargar</a> -->
+    <!-- <a href="https://google.com">Ir a google</a> -->
 </body>
 </html>
