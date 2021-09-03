@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+        col:nth-child(1){
+            background-color: yellowgreen;
+        }
+        col:nth-child(2){
+            background-color: rgb(140, 171, 196);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        las tablas en HTML sirven para mostrar contenido tabulado.
+
+        La estructura basica de una tabla se compone de:
+        table->Etiqueta que encierra una tabla
+        tr-> tabla row, etiqueta que construye una fila
+        td-> table data, etiqueta que construye celda
+
+        truco: el Numero de celdas dentro de un td establecera
+         el numero de columnas de la tabla.
+
+        los titulos de las tablas se establecen con la etiqueta caption, es una etiqueta opcional
+        , y segun la especificacion esa etiqueta se coloca justo despues de la etiqueta table.
+
+        LAs cabeceras de las tablas se establecen con la etiqueta thead.
+        dentro tendremos una etiqueta tr normal, pero en el caso de celdas, las estableceremos con la etiquetas th en lugar de td.
+         
+        El contenido de la tabla debe ir dentro de una etiqueta tbody para representar el cuerpo de la tabla.
+
+        de forma opcional podemos colocar un tfoot a ñla tabla para establecer un  pie de tabla, esto es algo que algunas tablas tienen como suma de cantidades o total.
+
+        para hacer que las celdas ocupen mas de una fila o mas de una columna tenemos 2 atributos: 
+            rowspan: sirve para que una celda ocupe mas de una fila, el valor por defecto es 1 
+            colspan sirve para quen una celda ocupe mas de una columna, el valor por defecto es 1
+
+        cuando necesitamos selecionar una columna, tenemos la etiqueta colgrou, que nos permite selecinar una columna en concreto. dentro podremos tantas etiquetas col como columnas tengamos, cada etiqueta col elquivaldra a cada columna siguiendo el mismo orden que tienen en la tabla 
+        
+        si necesitamos que una etiqueta col agrupe mas de una columna, tenemos atributo span, que funciona exactamente igual que rowspan y colspan 
+
+     -->
+    <h1>Tablas</h1>
+
+    <table>
+        <caption>Horario de Clases</caption>
+        <colgroup>
+            <col span="5">
+            <col>
+          
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>L</th>
+                <th>M</th>
+                <th>X</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>8:30 - 9:30</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+                <td>sociales</td>
+                <td>Matematicas</td>
+                <td>Matematicas</td>
+            </tr>
+            <tr>
+                <td>9:30 - 10:25</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Matematicas</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+            </tr>
+            <tr>
+                <td>10:25 - 11:20</td>
+                <td>Educacion Fisica</td>
+                <td>Ciencias</td>
+                <td>Lengua</td>
+                <td>Lengua</td>
+                <td>Educacion Fisica</td>
+            </tr>
+            <tr>
+                <td>11:20 - 11:45</td>
+                <td colspan="1">Recreo</td>
+            </tr>
+            <tr>
+                <td>11:45 - 12:40</td>
+                <td>Ingles</td>
+                <td>Sociales</td>
+                <td>Ingles</td>
+                <td>Tutoria</td>
+                <td>Ingles</td>
+            </tr>
+            <tr>
+                <td>12:40 - 13:35</td>
+                <td>Musica</td>
+                <td>Educacion Fisica </td>
+                <td>plastica</td>
+                <td>Religion</td>
+                <td>Musica</td>
+            </tr>
+            <tr>
+                <td>13:35 - 14:30</td>
+                <td>Tecnologia</td>
+                <td>Frances</td>
+                <td>Tecnologia</td>
+                <td>Frances</td>
+                <td>Tecnologia</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="1">Total de asignaturas</td>
+                <td>12</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
