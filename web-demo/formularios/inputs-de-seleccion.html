@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputs de seleccion</title>
+</head>
+<!-- 
+    radio-> permite selecionar una opcion de una lista de opciones relacionadas.
+
+    checkbox-> permite selecionar varias opciones de una lista relacionadas.
+
+    select-> crea una lista de opciones donde podemos selecionar una o varias opciones
+
+    cada opcion iraq dentro de una etiqueta <option> </option>
+
+    si tenemos muchas opciones podemos ordenarlas por categorias  a traves de la etiqueta <optgroup> con el atributo label para nombrar la categoria
+ -->
+<body>
+    
+    <h1>Elementos selecionables</h1>
+    <form >
+        <input type="list" list="pets">
+        <datalist id="pets ">
+            <option value="perro">perro</option>
+            <option value="gato">gato</option>
+            <option value="hamster">hamster</option>
+            <option value="conejo">conejo</option>
+            <option value="loro">loro</option>
+            <option value="canario">canario</option>
+            <option value="serpiente">serpiente</option>
+            <option value="tarantula">tarantula</option>
+        </datalist>
+        <!-- <select name="lenguajes" multiple>
+            <option value="html">HTML</option>
+            <option value="ccs">ccs</option>
+            <option value="javascrip">javascrip</option>
+        </select>
+        <select name="mascostas">
+            <optgroup label="4 patas">
+            <option value="perro">perro</option>
+            <option value="gato">gato</option>
+            <option value="hamster">hamster</option>
+            <option value="conejo">conejo</option>
+        </optgroup>
+        <optgroup label="aves">
+            <option value="loro">loro</option>
+            <option value="canario">canario</option>
+        </optgroup>
+        <optgroup label="otros">
+            <option value="serpiente">serpiente</option>
+            <option value="tarantula">tarantula</option>
+        </optgroup>
+        </select> -->
+        <!-- <h2>Genero</h2>
+        <label> Masculino
+            <input type="radio" name="gender" value="masculino" checked>
+        </label>
+        <label> Femenino
+            <input type="radio" name="gender" name="femenino">
+        </label>
+        <label> Desconocidos
+            <input type="radio" name="gender" name="desconocido">
+        </label> -->
+        
+        <!-- <h2>lenguajes que conoces</h2>
+        <label >
+            <input type="checbox" name="lenguajes" value="HTML">
+            HTML
+        </label>
+        <label >
+            <input type="checbox"  name="lenguajes" value="CCS">
+            CCS
+        </label>
+        <label >
+            <input type="checbox" name="lenguajes" value="javascrip">
+            javascrip
+        </label> -->
+    </form>
+</body>
+</html>
